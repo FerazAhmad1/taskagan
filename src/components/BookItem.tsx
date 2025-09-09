@@ -10,7 +10,7 @@ const BookItem: React.FC<IBookItemProps> = ({
 }) => {
   const coverUrl = cover_i
     ? `https://covers.openlibrary.org/b/id/${cover_i}-M.jpg`
-    : "https://via.placeholder.com/128x192?text=No+Cover";
+    : "https://m.media-amazon.com/images/I/81l3rZK4lnL._SY522_.jpg";
 
   return (
     <div className="flex gap-4 p-4  rounded-xl shadow-sm hover:shadow-md transition">
