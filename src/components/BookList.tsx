@@ -8,9 +8,9 @@ interface IBookListProps {
 const BookList: React.FC<IBookListProps> = ({ items }) => {
   return (
     <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-      {items.map((obj) => (
-        <BookItem {...obj} />
-      ))}
+      {items.map(({ key, ...rest }) => {
+        return <BookItem key={key} {...rest} />;
+      })}
     </div>
   );
 };

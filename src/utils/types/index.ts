@@ -1,7 +1,7 @@
 import type { SetStateAction } from "react";
 
 export interface IBookItemProps {
-
+    key: string;
     title: string;
     subtitle?: string;
     author_name?: string[];

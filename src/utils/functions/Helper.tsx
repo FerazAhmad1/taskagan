@@ -20,7 +20,7 @@ export function buildSearchUrl(filter: string, query: string, page = 1) {
     // Title → title:"query"
     const searchTerm = `title:"${q}"`;
     const encoded = encodeURIComponent(searchTerm).replace(/%20/g, "+");
-    return `https://openlibrary.org/search.json?q=${encoded}&mode=everything&page=${page}`;
+    return `https://openlibrary.org/earch.json?q=${encoded}&mode=everything&page=${page}`;
   }
 
   if (filter === "all") {
